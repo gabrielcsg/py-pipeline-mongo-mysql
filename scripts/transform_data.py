@@ -51,7 +51,7 @@ def save_csv(df: pd.DataFrame, path: str) -> None:
 
 
 if __name__ == "__main__":
-    # create and conect database
+    # create database connection
     mongo_uri = os.getenv("MONGO_URI")
     client = connect_mongo(mongo_uri)
     db = create_connect_db(client, "db_produtos")
